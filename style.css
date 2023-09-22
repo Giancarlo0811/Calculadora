@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    margin-top: 5%;
+    background-color: #333;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.contenedor-calculadora {
+    display: grid;
+    grid-template-rows: 2;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    width: 300px;
+}
+
+#pantalla {
+    width: 100%;
+    height: 100px;
+    padding-right: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #223850;
+}
+
+#numero-anterior{
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+#numero-actual {
+    font-size: 30px;
+    color: #fff;
+}
+
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    height: 300px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid rgba(251, 253, 255, 0.171);
+}
+
+.limpiar {
+    background-color: #128094;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.borrar {
+    font-size: 14px;
+}
+
+.suma {
+    grid-row: span 2;
+}
+
+.btn-num,.punto {
+    background-color: #223850;
+    color: #fff;
+}
+
+.btn-num:hover {
+    background-color: #385b80;
+}
+
+.btn-operador,
+.limpiar,
+.borrar,
+.igual {
+    background-color: #128094;
+    color: #fff;
+}
+
+.btn-operador:hover,
+.limpiar:hover,
+.borrar:hover,
+.igual:hover {
+    background-color: rgba(52, 155, 196);
+}
