@@ -104,3 +104,25 @@ body {
 .igual:hover {
     background-color: rgba(52, 155, 196);
 }
+
+footer {
+    padding: 0.5rem;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #223850
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
